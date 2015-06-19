@@ -92,7 +92,7 @@ static void calcMathingScore(const char* filename, Mat_<double> sim) {
 		for (int j=0; j<sim.cols; j++) {
 			// for each pj in probe
 			double s = sim.at<double>(j, j);
-			// cout # of gk: s_kj >= s_jj
+			// count # of gk: s_kj >= s_jj
 			int rank_pj = 0;
 			for (int k=0; k<sim.rows; k++) {
 				if (sim.at<double>(k, j) >= s)
